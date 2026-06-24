@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package.json package-lock.json* ./
 COPY apps/backend/package.json ./apps/backend/package.json
 
-RUN npm ci
+RUN npm install
 
 COPY turbo.json ./
 COPY apps/backend ./apps/backend
